@@ -17,13 +17,13 @@ export default function counter(state = initialState, action) {
             return {
                  ...state,
                  number: state.number + 1 ,
-                 dumbObject: { ...state.dumbObjectm, u: 0 }
+                 dumbObject: { ...state.dumbObject, u: 0 }
              };
         case types.DECREMENT:
             return {
                 ...state,
                 number: state.number - 1
-            }
+            };
         default:
             return state;
     }
